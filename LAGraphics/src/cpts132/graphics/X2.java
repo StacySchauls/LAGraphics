@@ -9,7 +9,7 @@ public class X2 extends javax.swing.JComponent {
   private java.awt.Color lc;
   
   /**
-   * Constructor, sets the preferred size.
+   * Constructor, sets the preferred size and the initial color.
    */
   public X2() {
     setPreferredSize(new java.awt.Dimension(25, 25));
@@ -30,9 +30,18 @@ public class X2 extends javax.swing.JComponent {
     g.drawLine(0, getHeight()-1, getWidth()-1, 0);
   }
   
+  /**
+   * Method to get the color of the line
+   * @return the color of the line
+   */
   public java.awt.Color getLineColor(){
       return lc;
   }
+  
+  /**
+   * Method to set the color of the line
+   * @param rgb The color to be set
+   */
   public void setLineColor(java.awt.Color rgb){
       lc = rgb;
       repaint();

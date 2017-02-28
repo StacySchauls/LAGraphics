@@ -43,6 +43,9 @@ public class LAGraphics {
     win.setLayout(new GridLayout(2, 2));
     // force the new layout manager to work
     win.validate();
+    
+   
+   
     }
     
 }
